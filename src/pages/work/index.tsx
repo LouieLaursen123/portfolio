@@ -12,6 +12,8 @@ import HeroImage from '../../assets/hero.png'
 // Components
 import { Header } from '../../components/global/Header'
 import { Inner } from '../../components/Inner'
+import { CtaButton } from '../../components/CtaButton'
+import PdfViewerComponent from '../../components/PdfViewer'
 
 const Work: NextPage = () => {
     return(
@@ -33,9 +35,23 @@ const Work: NextPage = () => {
                                     <Box key={item.id}>
                                         <Image src={item.featuredImage.src} alt="" />
                                         
-                                        <Heading>
+                                        <Heading mt={'1rem'}>
                                             {item.title}
                                         </Heading>
+
+                                        <Box mt={'1rem'}>
+                                            <CtaButton 
+                                                projectUrl={item.productDocumentation}
+                                                projectLinkTitle={'Se Dokumentation'}
+                                            />
+                                        </Box>
+
+                                        <Box mt={'1rem'}>
+                                            <CtaButton 
+                                                projectUrl={item.productLink}
+                                                projectLinkTitle={'Se Produkt'}
+                                            />
+                                        </Box>
                                     </Box>
                                 )
                             })}
@@ -50,11 +66,29 @@ const Work: NextPage = () => {
                                 {cases.hovedforlobTwo.map((item) => {
                                     return(
                                         <Box key={item.id}>
-                                            <Image src={item.featuredImage.src} alt="" />
+                                            <Image width={'100%'} height={'235px'} objectFit={'cover'} src={item.featuredImage.src} alt="" />
 
-                                            <Heading>
+                                            <Heading mt={'1rem'}>
                                                 {item.title}
                                             </Heading>
+
+                                            <Text>
+                                                Kernefagligheder: {item.coreDisciplines}
+                                            </Text>
+
+                                            <Box mt={'1rem'}>
+                                                <CtaButton 
+                                                    projectUrl={item.productDocumentation}
+                                                    projectLinkTitle={'Se Dokumentation'}
+                                                />
+                                            </Box>
+
+                                            <Box mt={'1rem'}>
+                                                <CtaButton 
+                                                    projectUrl={item.productLink}
+                                                    projectLinkTitle={'Se Produktet'}
+                                                />
+                                            </Box>
                                         </Box>
                                     )
                                 })}
