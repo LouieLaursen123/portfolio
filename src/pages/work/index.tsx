@@ -13,7 +13,7 @@ import HeroImage from '../../assets/hero.png'
 import { Header } from '../../components/global/Header'
 import { Inner } from '../../components/Inner'
 import { CtaButton } from '../../components/CtaButton'
-import PdfViewerComponent from '../../components/PdfViewer'
+import { Worker } from '@react-pdf-viewer/core'
 
 const Work: NextPage = () => {
     return(
@@ -23,6 +23,12 @@ const Work: NextPage = () => {
             <Box as="main" role={'main'} flex={1}>
                 <Box className={'heroElement'} position={'fixed'} left={'0%'} top={'0%'} width={'100%'} height={'100vh'}>
                     <Image src={HeroImage.src} alt="" position={'absolute'} top={'0%'} left={'0%'} width={'100%'} height={'100vh'} objectFit={'cover'} />
+                    <Inner size={'xs'}>
+                        <Box position={'absolute'} height={'100%'} top={'50%'} left={'10%'} maxWidth={'800px'}>
+                            <Heading fontSize={'6rem'}>Louie Bay Laursen</Heading>
+                            <Text fontSize={'2rem'}>I mit portfolio kan I finde de opgaver jeg løser til hverdag hos Adaptagency</Text>
+                        </Box>
+                    </Inner>
                 </Box>
 
                 <Box backgroundColor={'white'} zIndex={10} position={'relative'} mt={'100vh'} py={8}>
@@ -32,25 +38,27 @@ const Work: NextPage = () => {
                         <Grid gridTemplateColumns={'repeat(3, 1fr)'} gridGap={'2rem'} py={'2rem'}>
                             {cases.webCases.map((item) => {
                                 return(
-                                    <Box key={item.id}>
+                                    <Box key={item.id} backgroundColor={'white'} boxShadow={'2px 2px 15px 0px'}>
                                         <Image src={item.featuredImage.src} alt="" />
-                                        
-                                        <Heading mt={'1rem'}>
-                                            {item.title}
-                                        </Heading>
 
-                                        <Box mt={'1rem'}>
-                                            <CtaButton 
-                                                projectUrl={item.productDocumentation}
-                                                projectLinkTitle={'Se Dokumentation'}
-                                            />
-                                        </Box>
+                                        <Box p={'0.5rem'}>
+                                            <Heading mt={'1rem'}>
+                                                {item.title}
+                                            </Heading>
 
-                                        <Box mt={'1rem'}>
-                                            <CtaButton 
-                                                projectUrl={item.productLink}
-                                                projectLinkTitle={'Se Produkt'}
-                                            />
+                                            <Box mt={'1rem'}>
+                                                <CtaButton 
+                                                    projectUrl={item.productDocumentation}
+                                                    projectLinkTitle={'Se Dokumentation'}
+                                                />
+                                            </Box>
+
+                                            <Box mt={'1rem'}>
+                                                <CtaButton 
+                                                    projectUrl={item.productLink}
+                                                    projectLinkTitle={'Se Produkt'}
+                                                />
+                                            </Box>
                                         </Box>
                                     </Box>
                                 )
@@ -65,29 +73,31 @@ const Work: NextPage = () => {
                             <Grid gridTemplateColumns={'repeat(3, 1fr)'} gridGap={'2rem'} py={'2rem'}>
                                 {cases.hovedforlobTwo.map((item) => {
                                     return(
-                                        <Box key={item.id}>
+                                        <Box key={item.id} backgroundColor={'white'} boxShadow={'2px 2px 15px 0px'}>
                                             <Image width={'100%'} height={'235px'} objectFit={'cover'} src={item.featuredImage.src} alt="" />
 
-                                            <Heading mt={'1rem'}>
-                                                {item.title}
-                                            </Heading>
+                                            <Box p={'0.5rem'} mt={'0.5rem'} borderTopWidth={'1px'} borderTopColor={'black'}>
+                                                <Heading mt={'1rem'}>
+                                                    {item.title}
+                                                </Heading>
 
-                                            <Text>
-                                                Kernefagligheder: {item.coreDisciplines}
-                                            </Text>
+                                                <Text>
+                                                    Kernefagligheder: {item.coreDisciplines}
+                                                </Text>
 
-                                            <Box mt={'1rem'}>
-                                                <CtaButton 
-                                                    projectUrl={item.productDocumentation}
-                                                    projectLinkTitle={'Se Dokumentation'}
-                                                />
-                                            </Box>
+                                                <Box mt={'1rem'}>
+                                                    <CtaButton 
+                                                        projectUrl={item.productDocumentation}
+                                                        projectLinkTitle={'Se Dokumentation'}
+                                                    />
+                                                </Box>
 
-                                            <Box mt={'1rem'}>
-                                                <CtaButton 
-                                                    projectUrl={item.productLink}
-                                                    projectLinkTitle={'Se Produktet'}
-                                                />
+                                                <Box mt={'1rem'}>
+                                                    <CtaButton 
+                                                        projectUrl={item.productLink}
+                                                        projectLinkTitle={'Se Produktet'}
+                                                    />
+                                                </Box>
                                             </Box>
                                         </Box>
                                     )
@@ -95,6 +105,26 @@ const Work: NextPage = () => {
                             </Grid>
                         </Inner>
                     </Box>
+
+                    <Inner size={'2xl'}>
+                        <Box mt={'1rem'}>
+                            <Heading>
+                                Hovedforløb 3
+                            </Heading>
+                            <Text>
+                                Kommer October 2022
+                            </Text>
+                        </Box>
+
+                        <Box mt={'1rem'}>
+                            <Heading>
+                                Hovedforløb 4
+                            </Heading>
+                            <Text>
+                                Kommer October 2023
+                            </Text>
+                        </Box>
+                    </Inner>
                 </Box>
             </Box>
         </Box>
