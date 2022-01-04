@@ -58,28 +58,8 @@ const HomePage: NextPage = () => {
               </Grid>
             </Inner>
           </Box>
-
-          <Inner size={'lg'}>
-            <Grid gridTemplateColumns={'repeat(3, 1fr)'} gridGap={'2rem'} py={'2rem'}>
-              {cases.webCases.map((item) => {
-                return(
-                  <Box key={item.id}>
-                    <LatestCases
-                      title={item.title}
-                    />
-                  </Box>
-                )
-              })}
-            </Grid>
-          </Inner>
         </Box>
       </Layout>
-
-      {/* <Box as="footer" zIndex={10} backgroundColor={'white'}>
-        <Inner size={'4xl'}>
-          <Text>Powered by steffen</Text>
-        </Inner>
-      </Box> */}
     </Box>
   )
 }
