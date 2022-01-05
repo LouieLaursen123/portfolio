@@ -4,6 +4,7 @@ import hbkHero from "../assets/hbk-hero.png";
 import blueCityHero from "../assets/blue-city.png";
 import andelHero from "../assets/seas-rebranding.png";
 import adaptAgencyHero from "../assets/adaptagency-project.png"
+import magazineHero from "../assets/magasin-nyhavn.png";
 
 export const cases = {
   webCases: [
@@ -53,7 +54,7 @@ export const cases = {
       introduction:
         "Redigering af hjemmesider, tilføjelser af sider og opsætning af nye WordPress sider.",
       productLink: "https://a-r-c.dk/",
-      productDocumentation: 'https://drive.google.com/file/d/1TeBxk03yKMOtH0I55l7WAa3xk_K5odWk/view?usp=sharing',
+      productDocumentation: '/files/andel-dokumentation.pdf',
     },
     {
       id: 5,
@@ -63,17 +64,17 @@ export const cases = {
       introduction:
         "Redigering af hjemmesider, tilføjelser af sider og opsætning af nye WordPress sider.",
       productLink: "https://adaptagency.com/",
-      productDocumentation: 'https://drive.google.com/file/d/1-nPRw783BojwzEDhzmPnse_1aF8Hy-xy/view?usp=sharing',
+      productDocumentation: '/files/adaptagency-dokumentation.pdf',
     },
     {
       id: 6,
-      featuredImage: arcHero,
+      featuredImage: magazineHero,
       title: "Nyhavn rejser kundemagasin (Fiktivt)",
       coreDisciplines: 'Typografi & Ombrydning og Billed/Grafik',
       introduction:
         "Redigering af hjemmesider, tilføjelser af sider og opsætning af nye WordPress sider.",
-      productLink: "https://moethennessynordic.com/",
-      productDocumentation: 'https://drive.google.com/file/d/1TeBxk03yKMOtH0I55l7WAa3xk_K5odWk/view?usp=sharing',
+      productLink: "/files/magasin.pdf",
+      productDocumentation: '/files/magasin-dokumentation.pdf',
     },
   ],
 };
