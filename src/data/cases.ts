@@ -53,8 +53,8 @@ export const cases = {
       coreDisciplines: 'Grafisk produktionsforståelse',
       introduction:
         "Redigering af hjemmesider, tilføjelser af sider og opsætning af nye WordPress sider.",
-      productLink: "https://a-r-c.dk/",
-      productDocumentation: '/files/andel-dokumentation.pdf',
+      productLink: "",
+      productDocumentation: '/files/adapt-dokumentation.pdf',
     },
     {
       id: 5,
