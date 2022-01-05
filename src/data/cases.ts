@@ -53,7 +53,7 @@ export const cases = {
       coreDisciplines: 'Grafisk produktionsforståelse',
       introduction:
         "Redigering af hjemmesider, tilføjelser af sider og opsætning af nye WordPress sider.",
-      productLink: "",
+      productLink: "/files/produktion-andel.pdf",
       productDocumentation: '/files/adapt-dokumentation.pdf',
     },
     {
