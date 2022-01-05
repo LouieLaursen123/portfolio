@@ -33,8 +33,7 @@ const Work: NextPage = () => {
 
                 <Box backgroundColor={'white'} zIndex={10} position={'relative'} mt={'100vh'} py={8}>
                     <Inner size={'2xl'}>
-                        <Heading mb={'1rem'}>Portfolio</Heading>
-                        <Text>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</Text>
+                        <Heading mb={'1rem'}>Hovedforløb 1</Heading>
                         <Grid gridTemplateColumns={'repeat(3, 1fr)'} gridGap={'2rem'} py={'2rem'}>
                             {cases.webCases.map((item) => {
                                 return(
@@ -46,14 +45,14 @@ const Work: NextPage = () => {
                                                 {item.title}
                                             </Heading>
 
-                                            <Box mt={'1rem'}>
+                                            <Box mt={'2rem'}>
                                                 <CtaButton 
                                                     projectUrl={item.productDocumentation}
                                                     projectLinkTitle={'Se Dokumentation'}
                                                 />
                                             </Box>
 
-                                            <Box mt={'1rem'}>
+                                            <Box mt={'2rem'}>
                                                 <CtaButton 
                                                     projectUrl={item.productLink}
                                                     projectLinkTitle={'Se Produkt'}
@@ -68,8 +67,7 @@ const Work: NextPage = () => {
 
                     <Box backgroundColor={'orange.300'} py={'2rem'}>
                         <Inner size={'2xl'}>
-                            <Heading>Hovedforløb 2</Heading>
-                            <Text>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</Text>
+                            <Heading mb={'1rem'}>Hovedforløb 2</Heading>
                             <Grid gridTemplateColumns={'repeat(3, 1fr)'} gridGap={'2rem'} py={'2rem'}>
                                 {cases.hovedforlobTwo.map((item) => {
                                     return(
@@ -85,14 +83,14 @@ const Work: NextPage = () => {
                                                     Kernefagligheder: {item.coreDisciplines}
                                                 </Text>
 
-                                                <Box mt={'1rem'}>
+                                                <Box mt={'2rem'}>
                                                     <CtaButton 
                                                         projectUrl={item.productDocumentation}
                                                         projectLinkTitle={'Se Dokumentation'}
                                                     />
                                                 </Box>
 
-                                                <Box mt={'1rem'}>
+                                                <Box mt={'2rem'}>
                                                     <CtaButton 
                                                         projectUrl={item.productLink}
                                                         projectLinkTitle={'Se Produktet'}
