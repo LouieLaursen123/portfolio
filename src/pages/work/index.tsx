@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NextPage } from 'next'
 import Link from 'next/link'
 import { cases } from '../../data/cases'
@@ -13,7 +13,6 @@ import HeroImage from '../../assets/hero.png'
 import { Header } from '../../components/global/Header'
 import { Inner } from '../../components/Inner'
 import { CtaButton } from '../../components/CtaButton'
-import { Worker } from '@react-pdf-viewer/core'
 
 const Work: NextPage = () => {
     return(
@@ -34,14 +33,14 @@ const Work: NextPage = () => {
                 <Box backgroundColor={'white'} zIndex={10} position={'relative'} mt={'100vh'} py={8}>
                     <Inner size={'2xl'}>
                         <Heading mb={'1rem'}>Hovedforløb 1</Heading>
-                        <Grid gridTemplateColumns={'repeat(3, 1fr)'} gridGap={'2rem'} py={'2rem'}>
+                        <Grid gridTemplateColumns={'repeat(2, 1fr)'} gridGap={'2rem'} py={'2rem'}>
                             {cases.webCases.map((item) => {
                                 return(
-                                    <Box key={item.id} backgroundColor={'white'} boxShadow={'2px 2px 15px 0px'}>
-                                        <Image src={item.featuredImage.src} alt="" />
+                                    <Box key={item.id} backgroundColor={'white'} boxShadow={'2px 2px 15px 0px'} position={'relative'}>
+                                        <Image src={item.featuredImage.src} width={'100%'} height={'350px'} objectFit={'cover'} alt="" />
 
-                                        <Box p={'0.5rem'}>
-                                            <Heading mt={'1rem'}>
+                                        <Box p={'0.5rem'} backgroundColor={'rgba(0, 0, 255, 0.5)'} position={'absolute'} width={'100%'} height={'100%'} zIndex={10} top={'0%'}>
+                                            <Heading mt={'1rem'} color={'white'}>
                                                 {item.title}
                                             </Heading>
 
@@ -68,11 +67,11 @@ const Work: NextPage = () => {
                     <Box backgroundColor={'orange.300'} py={'2rem'}>
                         <Inner size={'2xl'}>
                             <Heading mb={'1rem'}>Hovedforløb 2</Heading>
-                            <Grid gridTemplateColumns={'repeat(3, 1fr)'} gridGap={'2rem'} py={'2rem'}>
+                            <Grid gridTemplateColumns={'repeat(2, 1fr)'} gridGap={'2rem'} py={'2rem'}>
                                 {cases.hovedforlobTwo.map((item) => {
                                     return(
                                         <Box key={item.id} backgroundColor={'white'} boxShadow={'2px 2px 15px 0px'}>
-                                            <Image width={'100%'} height={'235px'} objectFit={'cover'} src={item.featuredImage.src} alt="" />
+                                            <Image width={'100%'} height={'350px'} objectFit={'cover'} src={item.featuredImage.src} alt="" />
 
                                             <Box p={'0.5rem'} mt={'0.5rem'} borderTopWidth={'1px'} borderTopColor={'black'}>
                                                 <Heading mt={'1rem'}>
