@@ -64,7 +64,7 @@ export const cases = {
       introduction:
         "Redigering af hjemmesider, tilføjelser af sider og opsætning af nye WordPress sider.",
       productLink: "https://adaptagency.com/",
-      productDocumentation: '/files/adaptagency-2-dokumentation.pdf',
+      productDocumentation: '/files/adaptagency-dokumentation.pdf',
     },
     {
       id: 6,

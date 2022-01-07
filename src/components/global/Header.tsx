@@ -34,14 +34,6 @@ export const Header = () => {
                                     </a>
                                 </Link>
                             </Box>
-
-                            <Box mr={8}>
-                                <Link href="">
-                                    <a>
-                                        Contact
-                                    </a>
-                                </Link>
-                            </Box>
                         </Flex>
                     </Box>
                 </Flex>
