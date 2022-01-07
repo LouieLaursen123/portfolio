@@ -15,7 +15,7 @@ export const cases = {
       introduction:
         "Redigering af hjemmesider, tilføjelser af sider og opsætning af nye WordPress sider.",
       productLink: "https://hbkworld.com/",
-      productDocumentation: 'https://drive.google.com/file/d/1TeBxk03yKMOtH0I55l7WAa3xk_K5odWk/view?usp=sharing',
+      productDocumentation: '/files/portfolio-louie-bay-laursen.pdf',
     },
     {
       id: 1,
@@ -24,7 +24,7 @@ export const cases = {
       introduction:
         "Redigering af hjemmesider, tilføjelser af sider og opsætning af nye WordPress sider.",
       productLink: "https://oskargroup.dk/",
-      productDocumentation: 'https://drive.google.com/file/d/1TeBxk03yKMOtH0I55l7WAa3xk_K5odWk/view?usp=sharing',
+      productDocumentation: '/files/portfolio-louie-bay-laursen.pdf',
     },
     {
       id: 2,
@@ -33,7 +33,7 @@ export const cases = {
       introduction:
         "Redigering af hjemmesider, tilføjelser af sider og opsætning af nye WordPress sider.",
       productLink: "https://www.bluecity.dk/",
-      productDocumentation: 'https://drive.google.com/file/d/1TeBxk03yKMOtH0I55l7WAa3xk_K5odWk/view?usp=sharing',
+      productDocumentation: '/files/portfolio-louie-bay-laursen.pdf',
     },
     {
       id: 3,
@@ -42,7 +42,7 @@ export const cases = {
       introduction:
         "Redigering af hjemmesider, tilføjelser af sider og opsætning af nye WordPress sider.",
       productLink: "https://a-r-c.dk/",
-      productDocumentation: 'https://drive.google.com/file/d/1TeBxk03yKMOtH0I55l7WAa3xk_K5odWk/view?usp=sharing',
+      productDocumentation: '/files/portfolio-louie-bay-laursen.pdf',
     },
   ],
   hovedforlobTwo: [
